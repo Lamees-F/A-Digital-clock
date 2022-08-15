@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(249, 249, 213, 0.655);
+}
+section.dark{
+    background: rgba(30, 30, 30, 0.847);
+}
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    max-width: 560px;
+    width: 100%;
+    background: whitesmoke;
+    box-shadow: 0 5px 7px rgba(0,0,0, 0.2);
+    border-radius: 12px;
+    position: relative;
+}
+section.dark .container{
+    background: rgba(0, 0, 0, 0.422);
+}
+section.dark .time .time-colon .time-text{
+    background: rgba(54, 54, 54, 0.954);
+}
+section .container .icon i{
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+    height: 18px;
+    width: 30px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+section.dark .container .icon i{
+    color: white;
+}
+.container .icon i.fa-sun{
+    opacity:0;
+    pointer-events: none;
+}
+section.dark .container .icon i.fa-moon{
+    opacity:0;
+    pointer-events: none;
+}
+section.dark .container .icon i.fa-sun{
+    opacity:1;
+    pointer-events: auto;
+}
+section .container .time{
+    display: flex;
+    align-items:center;
+}
+.container .time .time-colon{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.time .time-colon .am-pm{
+    position: absolute;
+    top: 0;
+    right: -50px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+section.dark .time .time-colon .am-pm{
+    color: white;
+}
+.time .time-colon .time-text{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(249, 249, 213, 0.655);
+    border-radius: 6px;
+    box-shadow: 0 5px 7px rgba(0,0,0, 0.2) ;
+}
+.time .time-colon .time-text,
+.time .time-colon .colon{
+    font-size: 35px;
+    font-weight: 600;
+}
+section.dark .time .time-colon .time-text,
+section.dark .time .time-colon .colon{
+    color: white;
+}
+.time .time-colon .colon{
+    font-size: 40px;
+    margin: 0 10px;
+}
+.time .time-colon .time-text .text{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
